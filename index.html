@@ -6,10 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        .money {
+          width: 100%;
+          height: 260px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+    
+        .money h1 {
+          font-size: 25px;
+          margin-top: 20px;
+          color: #2C3F59;
+        }
+    
+        .range {
+          width: 90%;
+          height: 150px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+    
+        .percent {
+          width: 100%;
+          height: 30%;
+          border: solid 8px #B0BAC3;
+          margin-bottom: 10px;
+          border-radius: 20px;
+        }
+    
+        .amount {
+          width: 100%;
+          height: 30%;
+          border: solid 1px white;
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .amount p {
+          font-size: 20px;
+          font-family: calibri;
+          font-weight: bold;
+          color: #2C3F59;
+        }
+    
+        .percent-show {
+          width: 80%;
+          height: 101%;
+          background-color: #2C3F59;
+          border-radius: 10px;
+        }
+    
+        .percent-show {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #B0BAC3;
+          font-weight: bold;
+        }
+      </style>
 </head>
 
 <body>
-    <div class="main" style="
+    <!-- <div class="main" style="
     height: 30em;
     width:100%;
     box-sizing: border-box; display: flex; justify-content: space-around;font-family: 'Roboto', sans-serif; text-align: center;
@@ -29,7 +98,21 @@
             <h1 class="H3">Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, quo.</p>
         </div>
-    </div>
+    </div> -->
+
+    <div class="money">
+        <h1>We've reached so far</h1>
+        <div class="range">
+          <div class="percent">
+            <div class="percent-show">80%</div>
+          </div>
+          <div class="amount">
+            <p>8000$ raised</p>
+            <p>54 days left</p>
+            <p>goal: 10000$</p>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
