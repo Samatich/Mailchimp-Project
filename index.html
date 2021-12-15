@@ -6,10 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .don-text h1 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: bolder;
+            color: #2A9DF4;
+            margin: 10px;
+        }
+
+        .don-container {
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+        img {
+            border-radius: 50%;
+            width: 90px;
+        }
+
+        .boxes {
+            box-sizing: border-box;
+            border-radius: solid;
+            background-color: #2A9DF4;
+            text-align: center;
+        }
+
+        .boxes h4{
+            box-sizing: border-box;
+            border-radius: solid;
+            background-color: rgb(185, 184, 184);
+            color: white;
+            padding: 3px;
+            text-align: center;
+            height: 25px;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        .boxes h5 {
+            text-align: center;
+            color: white;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="main" style="
+    <!-- <div class="main" style="
     height: 30em;
     width:100%;
     box-sizing: border-box; display: flex; justify-content: space-around;font-family: 'Roboto', sans-serif; text-align: center;
@@ -29,7 +82,43 @@
             <h1 class="H3">Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, quo.</p>
         </div>
-    </div>
+    </div> -->
+
+    <section class="don">
+        <div class="don-text">
+         <h1>Our Latest Donations</h1>
+        </div>
+        
+        <div class="don-container">
+            <div class="first">
+                <img src="https://mcusercontent.com/5529bface0ae0216a30007f92/images/33e466f7-519c-56d3-d18b-67743c09a9c1.jpg" alt="Ellen DeGeneres">
+                <h5>Ellen De Generes</h5>
+                <div class="boxes">
+                    <h5>Donated</h5>
+                    <h4>$2000</h4>
+                </div>
+            </div>
+            
+            <div class="second">
+                <img src="https://mcusercontent.com/5529bface0ae0216a30007f92/images/f856ec01-b29c-735c-7da0-e728190c4cfd.png" alt="WWF">
+                <h5>WWF</h5>
+                <div class="boxes">
+                    <h5>Donated</h5>
+                    <h4>$1000</h4>
+                </div>
+            </div>
+
+            <div class="third">
+                <img src="https://mcusercontent.com/5529bface0ae0216a30007f92/images/edc738e6-8d3a-ea7c-b455-3565bd46c318.png" alt="anonymous">
+                <h5>Anonymous</h5>
+                <div class="boxes">
+                    <h5>Donated</h5>
+                    <h4>$500</h4>
+                </div>
+            </div>
+        
+        </div>
+    </section>
 </body>
 
 </html>
