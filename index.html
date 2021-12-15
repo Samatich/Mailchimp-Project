@@ -6,10 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            align-items: center;
+            font-size: 30px;
+            margin-top: 15px;
+            color: #2A9DF4;
+            text-align: center;
+        }
+
+        .image img {
+            width: 300px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2A9DF4;
+            font-size: 1.2rem;
+        }
+    </style>
+
 </head>
 
+
 <body>
-    <div class="main" style="
+    <!-- <div class="main" style="
     height: 30em;
     width:100%;
     box-sizing: border-box; display: flex; justify-content: space-around;font-family: 'Roboto', sans-serif; text-align: center;
@@ -29,7 +74,39 @@
             <h1 class="H3">Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, quo.</p>
         </div>
+    </div> -->
+    <div class="help">
+        <h1 class="howhelp"> How Can You Help?</h1>
     </div>
+    <div class="wrapper">
+        <div class="paragraph">
+            <p>Last month, a 20-year-old female orca named Tahlequah (J35) gave birth to a male calf that died after
+                half an
+                hour. While many orca mothers have been seen carrying the bodies of their dead calves for a day or so,
+                Tahlequah did so for 17 days — a heartbreaking tour that captured the world's attention, and that ended
+                last
+                Friday. "I have never seen that kind of grief," says Ken Balcomb from the Center for Whale Research</p>
+        </div>
+        <div class="image">
+            <img src="https://cdn.givingcompass.org/wp-content/uploads/2018/08/14164809/Grieving-orca.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="links">
+        <ul>
+            <li><a href="https://givingcompass.org/article/the-1-billion-push-to-save-orca-whales-in-washington/?gclid=EAIaIQobChMI-tCuuJfh9AIVggWiAx38hAfeEAAYASAAEgIIXfD_BwE"
+                    target='_blank'> <strong>Media</strong> </a> </li>
+
+            <li><a href="https://givingcompass.org/partner-solutions" target='_blank'> <strong>Partners</strong> </a>
+            </li>
+
+            <li><a href="https://givingcompass.org/giving-best-practices" target='_blank'> <strong>Practices</strong>
+                </a> </li>
+        </ul>
+    </div>
+    </body>
+    
 </body>
 
 </html>
