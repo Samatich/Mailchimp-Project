@@ -6,10 +6,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrapper-save{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 500px;
+            width: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .title-save{
+            text-align: center;
+            padding: 15px auto;
+            margin: 15px auto;
+        }
+
+        .card-save{
+            list-style: none;
+            text-align: center;
+            padding: 10px 80px 10px 40px;
+            margin: 10px 50px 10px 20px;
+            height: 400px;
+            width: 80%;
+        }
+
+        .grid-save{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-gap: 20px; 
+        }
+
+        .card-image{
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            box-shadow: 1px 2px 3px 1px;
+        }
+
+        .card-title{
+            margin: 10px 5px;
+            text-align: center;
+        }
+
+        .card-text{
+            margin: 8px 15px;
+            line-height: 1.4;
+        }
+
+        .card-btn{
+            margin-top: 12px;
+            padding: 15px 25px;
+            width: 70%;
+            font-size: 14px;
+            background-color: #2A9DF4;
+            border: none;
+            color: white;
+            text-transform:uppercase;
+            font-weight: bold;
+            line-height: 1.2;
+            border-radius: 5px;
+        }
+
+        .card-btn:hover{
+            background-color: #022b4b;
+            color: rgb(46, 240, 46);
+            cursor: pointer;
+        }
+
+        @media (max-width: 780px) {
+            .grid-save{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 15px; 
+            }
+
+            .title-save{
+                font-size: 20px;
+                
+            }
+
+            .card-save{
+                height: 250px;
+                width: 80%;
+            }
+
+            .card-btn{
+                width: 50%;
+                padding: 11px 18px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-save{
+            display: grid;
+            grid-template-columns: 100%; 
+            }
+
+            .title-save{
+                font-size: 20px;    
+            }
+
+            .card-save{
+                height: 250px;
+                width: 80%;
+            }
+
+            .card-btn{
+                width: 60%;
+                padding: 11px 18px;
+                margin-bottom: 15px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="main" style="
+    <div class="wrapper-save">
+        <h2 class="title-save">
+            Save the whales, save the world.
+        </h2>
+        <ul class="card-save grid-save">
+            <li class="card-save-items">
+                <img src="https://us.whales.org/wp-content/uploads/sites/2/bb-plugin/cache/humpback-spyhop-sue-rocca-150x150-circle.jpg" alt="Whale's image" class="card-image">
+                <h3 class="card-title">Adopt</h3>
+                <p class="card-text">Adopt a whale and help us protect these amazing creatures.</p>
+                <button class="card-btn">Adopt a whale</button>
+            </li>
+            <li class="card-save-items">
+                <img src="https://us.whales.org/wp-content/uploads/sites/2/bb-plugin/cache/Happy-Calf_0618_Charlie-Phillips-150x150-circle.jpg" alt="Whale's image" class="card-image">
+                <h3 class="card-title">Join</h3>
+                <p class="card-text">You can join our team and help us save whales and dolphins</p>
+                <button class="card-btn">Become a member</button>
+            </li>
+            <li class="card-save-items">
+                <img src="https://us.whales.org/wp-content/uploads/sites/2/bb-plugin/cache/right-whale-breach-wdc-150x150-circle.jpg" alt="Whale's image" class="card-image">
+                <h3 class="card-title">Donate</h3>
+                <p class="card-text">Your gifts help us take action for whales and dolphins.</p>
+                <button class="card-btn">Support our work</button>
+            </li>
+            <li class="card-save-items">
+                <img src="https://us.whales.org/wp-content/uploads/sites/2/bb-plugin/cache/orca-spyhop-rob-lott-300-150x150-circle.jpg" alt="Whale's image" class="card-image">
+                <h3 class="card-title">Shop</h3>
+                <p class="card-text">Support WDC by shopping for yourself or a friend.</p>
+                <button class="card-btn">Shop for a cause</button>
+            </li>
+        </ul>
+    </div>
+
+<!--     <div class="main" style="
     height: 30em;
     width:100%;
     box-sizing: border-box; display: flex; justify-content: space-around;font-family: 'Roboto', sans-serif; text-align: center;
@@ -29,7 +180,7 @@
             <h1 class="H3">Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, quo.</p>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
